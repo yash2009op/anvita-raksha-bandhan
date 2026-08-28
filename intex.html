@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Anvi 🌸</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Baloo 2',cursive;
+
+    color:#5c4b56;
+
+    background:#fff9fc;
+
+    overflow-x:hidden;
+}
+
+
+/* ================= BACKGROUND ================= */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-3;
+
+    background:
+
+        radial-gradient(
+            circle at 10% 15%,
+            #ffdce9,
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 90% 25%,
+            #dff7ff,
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 50% 100%,
+            #fff0c9,
+            transparent 30%
+        ),
+
+        #fff9fc;
+}
+
+
+/* FLOATING DECORATIONS */
+
+.float{
+
+    position:fixed;
+
+    z-index:-1;
+
+    opacity:.45;
+
+    pointer-events:none;
+
+    animation:float 7s ease-in-out infinite;
+}
+
+.f1{
+    left:5%;
+    top:20%;
+    font-size:35px;
+}
+
+.f2{
+    right:7%;
+    top:30%;
+    font-size:30px;
+    animation-delay:2s;
+}
+
+.f3{
+    left:10%;
+    bottom:15%;
+    font-size:28px;
+    animation-delay:4s;
+}
+
+.f4{
+    right:10%;
+    bottom:20%;
+    font-size:34px;
+    animation-delay:1s;
+}
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0) rotate(-5deg);
+    }
+
+    50%{
+        transform:translateY(-25px) rotate(8deg);
+    }
+
+}
+
+
+/* ================= NAV ================= */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:17px 8%;
+
+    background:rgba(255,255,255,.78);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:
+        1px solid #f3dfe8;
+}
+
+.logo{
+
+    font-family:'Fredoka',sans-serif;
+
+    color:#d875a0;
+
+    font-size:23px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#725f69;
+
+    font-size:13px;
+
+    margin-left:25px;
+
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:
+        120px 20px
+        70px;
+}
+
+.hero-content{
+
+    max-width:850px;
+}
+
+
+/* FLOWER */
+
+.flower{
+
+    font-size:95px;
+
+    display:inline-block;
+
+    animation:
+
+        flowerFloat 3s ease-in-out infinite;
+
+    filter:
+        drop-shadow(
+            0 10px 15px
+            rgba(216,117,160,.15)
+        );
+}
+
+@keyframes flowerFloat{
+
+    0%,100%{
+        transform:translateY(0) rotate(-5deg);
+    }
+
+    50%{
+        transform:translateY(-14px) rotate(5deg);
+    }
+
+}
+
+
+.small-title{
+
+    margin-top:20px;
+
+    color:#d875a0;
+
+    font-size:12px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+}
+
+.hero h1{
+
+    font-family:'Fredoka',sans-serif;
+
+    font-size:
+        clamp(65px,11vw,120px);
+
+    color:#d875a0;
+
+    line-height:1;
+
+    margin:8px 0;
+
+    text-shadow:
+        4px 5px 0 #f9d7e5;
+}
+
+.hero h2{
+
+    font-family:'Fredoka',sans-serif;
+
+    font-size:25px;
+
+    color:#7b9db0;
+
+    margin-top:12px;
+}
+
+.hero p{
+
+    max-width:650px;
+
+    margin:25px auto;
+
+    color:#806f78;
+
+    line-height:1.9;
+
+    font-size:15px;
+}
+
+
+/* BUTTON */
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#d875a0;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 10px 25px
+        rgba(216,117,160,.25);
+
+    transition:.35s;
+}
+
+.btn:hover{
+
+    transform:
+        translateY(-5px)
+        scale(1.02);
+
+    box-shadow:
+        0 15px 35px
+        rgba(216,117,160,.35);
+}
+
+
+/* ================= SECTIONS ================= */
+
+section{
+
+    padding:100px 8%;
+}
+
+.label{
+
+    text-align:center;
+
+    color:#d875a0;
+
+    font-size:11px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:10px;
+}
+
+.title{
+
+    text-align:center;
+
+    font-family:'Fredoka',sans-serif;
+
+    color:#c96791;
+
+    font-size:
+        clamp(36px,6vw,58px);
+}
+
+.subtitle{
+
+    max-width:650px;
+
+    margin:
+        18px auto
+        55px;
+
+    text-align:center;
+
+    color:#86747e;
+
+    line-height:1.8;
+
+    font-size:14px;
+}
+
+
+/* ================= CARDS ================= */
+
+.cards{
+
+    max-width:1050px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(220px,1fr)
+        );
+
+    gap:24px;
+}
+
+.card{
+
+    padding:35px 25px;
+
+    background:rgba(255,255,255,.82);
+
+    border:
+
+        2px solid
+        #f5dfe9;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    box-shadow:
+        0 12px 35px
+        rgba(120,70,90,.07);
+
+    transition:.4s;
+}
+
+.card:hover{
+
+    transform:
+        translateY(-9px)
+        rotate(1deg);
+
+    border-color:#e6aac4;
+}
+
+.card-icon{
+
+    font-size:48px;
+
+    margin-bottom:12px;
+}
+
+.card h3{
+
+    font-family:'Fredoka',sans-serif;
+
+    color:#d875a0;
+
+    font-size:23px;
+
+    margin-bottom:8px;
+}
+
+.card p{
+
+    color:#81717a;
+
+    font-size:14px;
+
+    line-height:1.8;
+}
+
+
+/* ================= MEMORY ================= */
+
+.memory{
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f6,
+            #eefaff
+        );
+}
+
+.memory-box{
+
+    max-width:850px;
+
+    margin:auto;
+
+    padding:45px 30px;
+
+    background:white;
+
+    border-radius:35px;
+
+    border:
+        2px solid
+        #f0dce6;
+
+    text-align:center;
+
+    box-shadow:
+        0 20px 50px
+        rgba(100,70,80,.08);
+}
+
+.memory-icons{
+
+    font-size:55px;
+
+    margin-bottom:15px;
+}
+
+.memory-box h3{
+
+    font-family:'Fredoka',sans-serif;
+
+    color:#c96791;
+
+    font-size:28px;
+
+    margin-bottom:12px;
+}
+
+.memory-box p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#806f78;
+
+    line-height:1.9;
+}
+
+
+/* ================= LETTER ================= */
+
+.letter-section{
+
+    background:#fff;
+
+}
+
+.letter{
+
+    max-width:800px;
+
+    margin:auto;
+
+    padding:50px 45px;
+
+    position:relative;
+
+    background:#fffdf8;
+
+    border-radius:25px;
+
+    border:
+        2px solid
+        #efd7e2;
+
+    box-shadow:
+        0 20px 55px
+        rgba(90,60,70,.08);
+}
+
+.letter::after{
+
+    content:"🌸";
+
+    position:absolute;
+
+    right:30px;
+
+    top:20px;
+
+    font-size:60px;
+
+    opacity:.12;
+}
+
+.letter-title{
+
+    font-family:'Fredoka',sans-serif;
+
+    color:#d875a0;
+
+    font-size:32px;
+
+    margin-bottom:28px;
+}
+
+.letter p{
+
+    color:#675760;
+
+    line-height:2;
+
+    font-size:15px;
+
+    margin-bottom:18px;
+}
+
+.letter strong{
+
+    color:#cf638e;
+}
+
+
+/* ================= GIFT ================= */
+
+.gift-section{
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff9e8,
+            #fff0f7
+        );
+}
+
+.gift{
+
+    width:180px;
+
+    height:175px;
+
+    margin:
+        55px auto
+        30px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+.gift:hover{
+
+    transform:
+        scale(1.08)
+        rotate(-2deg);
+}
+
+
+/* BOX */
+
+.box{
+
+    position:absolute;
+
+    bottom:0;
+    left:8px;
+
+    width:164px;
+    height:110px;
+
+    background:#f49bbb;
+
+    border-radius:12px;
+
+    box-shadow:
+        0 15px 30px
+        rgba(180,80,120,.15);
+}
+
+.box::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:69px;
+
+    width:26px;
+    height:110px;
+
+    background:#ffe49a;
+}
+
+
+/* LID */
+
+.lid{
+
+    position:absolute;
+
+    top:30px;
+    left:0;
+
+    width:180px;
+    height:38px;
+
+    background:#df739d;
+
+    border-radius:10px;
+
+    z-index:5;
+
+    transition:.7s;
+}
+
+.lid::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:77px;
+
+    width:26px;
+    height:38px;
+
+    background:#ffe49a;
+}
+
+.gift.open .lid{
+
+    transform:
+        translateY(-70px)
+        rotate(-5deg);
+}
+
+
+/* ================= SURPRISE ================= */
+
+.surprise{
+
+    display:none;
+
+    max-width:650px;
+
+    margin:45px auto;
+
+    padding:40px 25px;
+
+    background:white;
+
+    border-radius:30px;
+
+    border:
+        2px solid
+        #efc5d7;
+
+    box-shadow:
+        0 20px 50px
+        rgba(100,70,80,.09);
+
+    animation:reveal .7s ease;
+}
+
+@keyframes reveal{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(25px)
+            scale(.97);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+.surprise h2{
+
+    font-family:'Fredoka',sans-serif;
+
+    color:#d875a0;
+
+    font-size:38px;
+
+    margin-bottom:15px;
+}
+
+.surprise p{
+
+    color:#806f78;
+
+    line-height:1.9;
+}
+
+.big{
+
+    color:#c96791 !important;
+
+    font-size:19px !important;
+
+    font-weight:700;
+}
+
+
+/* ================= FINAL ================= */
+
+.final{
+
+    display:none;
+
+    min-height:80vh;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            #ffe1ed,
+            #fff9fc 65%
+        );
+}
+
+.final-content{
+
+    max-width:750px;
+}
+
+.final-flower{
+
+    font-size:85px;
+
+    animation:
+        heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.13);
+    }
+
+}
+
+.final h2{
+
+    font-family:'Fredoka',sans-serif;
+
+    color:#c96791;
+
+    font-size:
+        clamp(35px,6vw,65px);
+
+    margin:20px 0;
+}
+
+.final p{
+
+    color:#806f78;
+
+    line-height:2;
+
+    font-size:16px;
+}
+
+
+/* ================= CONFETTI ================= */
+
+.confetti{
+
+    position:fixed;
+
+    top:-20px;
+
+    z-index:5000;
+
+    pointer-events:none;
+
+    font-size:20px;
+
+    animation:
+        fall 3s linear forwards;
+}
+
+@keyframes fall{
+
+    to{
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+    }
+
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    padding:45px 20px;
+
+    text-align:center;
+
+    background:#594750;
+
+    color:#eadde3;
+
+    line-height:2;
+
+    font-size:12px;
+}
+
+footer span{
+
+    color:#ffb5d0;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:650px){
+
+    nav{
+
+        padding:
+            16px 6%;
+    }
+
+    nav a{
+        display:none;
+    }
+
+    section{
+
+        padding:
+            80px 5%;
+    }
+
+    .hero h1{
+
+        font-size:70px;
+    }
+
+    .letter{
+
+        padding:
+            35px 23px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- FLOATING DECORATIONS -->
+
+<div class="float f1">🌸</div>
+
+<div class="float f2">✨</div>
+
+<div class="float f3">🌷</div>
+
+<div class="float f4">💗</div>
+
+
+<!-- NAV -->
+
+<nav>
+
+    <div class="logo">
+        ANVI 🌸
+    </div>
+
+    <div>
+
+        <a href="#home">
+            HOME
+        </a>
+
+        <a href="#vibe">
+            VIBE
+        </a>
+
+        <a href="#memory">
+            MEMORIES
+        </a>
+
+        <a href="#letter">
+            LETTER
+        </a>
+
+        <a href="#gift">
+            GIFT
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+    <div class="hero-content">
+
+        <div class="flower">
+            🌸
+        </div>
+
+        <div class="small-title">
+            A Little Raksha Bandhan Surprise
+        </div>
+
+        <h1>
+            ANVI
+        </h1>
+
+        <h2>
+            My Mastikhor Bahena 💗
+        </h2>
+
+        <p>
+
+            For the girl who can turn
+            a normal conversation into
+            a full-time masti session. 😁
+
+        </p>
+
+        <a
+            href="#vibe"
+            class="btn"
+        >
+            ENTER THE SURPRISE ✨
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= VIBE ================= -->
+
+<section
+    id="vibe"
+>
+
+    <div class="label">
+        ANVI'S WORLD
+    </div>
+
+    <h2 class="title">
+        THE MASTIKHOR FILES 😁
+    </h2>
+
+    <p class="subtitle">
+
+        Some people are calm,
+        some people are serious...
+
+        and then there is Anvi. 😂
+
+    </p>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                😁
+            </div>
+
+            <h3>
+                MASTIKHOR
+            </h3>
+
+            <p>
+
+                Peace is temporary.
+                Masti is permanent.
+
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                🌸
+            </div>
+
+            <h3>
+                CUTE
+            </h3>
+
+            <p>
+
+                Somehow manages to be
+                cute while causing chaos.
+
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                ✨
+            </div>
+
+            <h3>
+                SMILE
+            </h3>
+
+            <p>
+
+                Keep that smile alive.
+                It suits you too much.
+
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                💗
+            </div>
+
+            <h3>
+                SPECIAL
+            </h3>
+
+            <p>
+
+                Distance doesn't change
+                how much a sister is remembered.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= MEMORY ================= -->
+
+<section
+    class="memory"
+    id="memory"
+>
+
+    <div class="label">
+        ONE LITTLE THING
+    </div>
+
+    <h2 class="title">
+        IF I COULD BE THERE...
+    </h2>
+
+    <p class="subtitle">
+        Sometimes you don't need a perfect gift.
+    </p>
+
+
+    <div class="memory-box">
+
+        <div class="memory-icons">
+            🫂 🌸 🎀
+        </div>
+
+        <h3>
+            ONE RAKHI MOMENT
+        </h3>
+
+        <p>
+
+            Kaash main tumhare saath waha hota
+            Rakhi baandhvane ke liye. 🤧
+
+            <br><br>
+
+            But koi baat nahi...
+
+            Tumne jo Rakhi bheji,
+            maine imagine kar liya ki
+            tumne mujhe Rakhi pehnayi hai. ☺️
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LETTER ================= -->
+
+<section
+    id="letter"
+    class="letter-section"
+>
+
+    <div class="label">
+        FROM YOUR BHAI
+    </div>
+
+    <h2 class="title">
+        A LETTER FOR ANVI 💌
+    </h2>
+
+    <p class="subtitle">
+
+        Warning:
+        thoda emotional hai...
+        but thodi masti bhi hai. 😁
+
+    </p>
+
+
+    <div class="letter">
+
+        <div class="letter-title">
+            Hieeeee Bahenaa! 🌸
+        </div>
+
+
+        <p>
+
+            Hieeeee bahenaa!
+            Kaise he tu?
+
+            <br><br>
+
+            I hope tu thik hogi.
+
+            <br>
+
+            Agar nahi hai toh maaf karna. 🤧
+
+            <br><br>
+
+            But main chahta hoon
+            ki tu hamesha thik rahe.
+
+        </p>
+
+
+        <p>
+
+            Kash main tere saath waha par hota
+            Rakhi baandhvane ke liye. 🤧
+
+            <br><br>
+
+            But koi baat nahi.
+
+            <br><br>
+
+            Tune jo Rakhi bheji,
+            maine imagine kar liya
+            tune mujhe Rakhi pehnayi hai.
+
+            <br><br>
+
+            Hehehe. ☺️
+
+        </p>
+
+
+        <p>
+
+            Sabse jyada yaad aati hai
+            tumhari bahen.
+
+            <br><br>
+
+            Aur chinta bhi hoti hai,
+            kyuki tu khaati bhi nahi hai thik se.
+
+            <br><br>
+
+            Kuch na kuch chot lag jaati hai tujhe.
+
+            <br><br>
+
+            <strong>
+                Dhayan rakha kar apna!
+            </strong>
+
+            😭
+
+        </p>
+
+
+        <p>
+
+            Has!
+
+            <br>
+
+            Kya rahi hai be?
+
+            <br>
+
+            Haa nahi toh? 😁😁
+
+            <br><br>
+
+            Hehe...
+
+        </p>
+
+
+        <p>
+
+            Waise life mein
+            khushi wale time se jyada
+            problem wale time par
+            mujhe yaad zarur karna.
+
+            <br><br>
+
+            Shayad main teri problem
+            dur kar paau.
+
+            <br><br>
+
+            Main apni puri kosis karunga
+            teri raksha karne ke liye.
+
+            ❤️
+
+        </p>
+
+
+        <p>
+
+            Aur haa pagali...
+
+            <br><br>
+
+            <strong>
+                Khana khaa liya kar chup-chaap!
+            </strong>
+
+            😂
+
+            <br><br>
+
+            Haa nahi toh? 😤
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Happy Raksha Bandhan,
+                meri pyari bahena! 🌸❤️
+            </strong>
+
+        </p>
+
+
+        <p>
+
+            — Your Bhai ☺️
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GIFT ================= -->
+
+<section
+    class="gift-section"
+    id="gift"
+>
+
+    <div class="label">
+        A LITTLE SURPRISE
+    </div>
+
+    <h2 class="title">
+        OKAY PAGALI... 🎁
+    </h2>
+
+    <p class="subtitle">
+
+        Letter padh liya?
+
+        <br>
+
+        Ab gift open kar. 👀
+
+    </p>
+
+
+    <div
+        class="gift"
+        id="giftBox"
+        onclick="openGift()"
+    >
+
+        <div class="lid"></div>
+
+        <div class="box"></div>
+
+    </div>
+
+
+    <button
+        class="btn"
+        onclick="openGift()"
+    >
+        OPEN GIFT 🌸
+    </button>
+
+
+    <div
+        class="surprise"
+        id="surprise"
+    >
+
+        <h2>
+            HEHEHEHE! 😁🌸
+        </h2>
+
+
+        <p>
+
+            You actually opened it! 😂
+
+        </p>
+
+
+        <br>
+
+
+        <p class="big">
+
+            Your gift is officially unlocked! 💗
+
+        </p>
+
+
+        <br>
+
+
+        <p>
+
+            And remember...
+
+            <br><br>
+
+            Apna khayal rakhna,
+            time par khana khaana,
+
+            <br>
+
+            aur unnecessarily
+            chot mat lagwa lena. 😭😂
+
+        </p>
+
+
+        <br>
+
+
+        <button
+            class="btn"
+            onclick="showFinal()"
+        >
+            FINAL SURPRISE ✨
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FINAL ================= -->
+
+<section
+    class="final"
+    id="final"
+>
+
+    <div class="final-content">
+
+        <div class="final-flower">
+            🌸💗
+        </div>
+
+
+        <h2>
+            HAPPY RAKSHA BANDHAN,
+            ANVI!
+        </h2>
+
+
+        <p>
+
+            Hamesha khush reh.
+
+            <br>
+
+            Hamesha smile kar.
+
+            <br>
+
+            Apna khayal rakh.
+
+            <br><br>
+
+            Aur sabse important...
+
+            <br><br>
+
+            <strong>
+                Problem ho toh apne Bhai ko
+                yaad karna.
+            </strong>
+
+            ❤️
+
+            <br><br>
+
+            Main shayad har problem solve
+            na kar paau...
+
+            <br>
+
+            but kosis hamesha karunga.
+
+            ☺️
+
+            <br><br>
+
+            Aur ab...
+
+            <br>
+
+            jaa aur khana khaa! 😂
+
+        </p>
+
+
+        <br>
+
+
+        <div style="font-size:30px;">
+            🌸 ✨ 💗 🎀 🌷 ✨ 🌸
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    Made specially for
+
+    <span>
+        Anvi 🌸
+    </span>
+
+    <br>
+
+    Happy Raksha Bandhan ❤️
+
+    <br><br>
+
+    <small>
+        From your Bhai — with a little masti. 😁
+    </small>
+
+</footer>
+
+
+<script>
+
+
+/* ================= GIFT ================= */
+
+function openGift(){
+
+    const gift =
+        document.getElementById("giftBox");
+
+    const surprise =
+        document.getElementById("surprise");
+
+
+    gift.classList.add("open");
+
+    surprise.style.display="block";
+
+
+    createConfetti();
+
+
+    setTimeout(function(){
+
+        surprise.scrollIntoView({
+
+            behavior:"smooth",
+
+            block:"center"
+
+        });
+
+    },400);
+
+}
+
+
+/* ================= FINAL ================= */
+
+function showFinal(){
+
+    const final =
+        document.getElementById("final");
+
+
+    final.style.display="flex";
+
+
+    createConfetti();
+
+
+    setTimeout(function(){
+
+        final.scrollIntoView({
+
+            behavior:"smooth",
+
+            block:"center"
+
+        });
+
+    },300);
+
+}
+
+
+/* ================= CONFETTI ================= */
+
+function createConfetti(){
+
+    const items=[
+
+        "🌸",
+        "💗",
+        "✨",
+        "🌷",
+        "🎀",
+        "🦋",
+        "💕",
+        "⭐"
+
+    ];
+
+
+    for(
+        let i=0;
+        i<80;
+        i++
+    ){
+
+        const item =
+            document.createElement("div");
+
+
+        item.className="confetti";
+
+
+        item.innerHTML =
+            items[
+                Math.floor(
+                    Math.random()*items.length
+                )
+            ];
+
+
+        item.style.left =
+            Math.random()*100+"vw";
+
+
+        item.style.animationDuration =
+            (2+Math.random()*2)+"s";
+
+
+        item.style.animationDelay =
+            Math.random()+"s";
+
+
+        document.body.appendChild(item);
+
+
+        setTimeout(function(){
+
+            item.remove();
+
+        },4500);
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
